@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: rgb(126, 184, 162);
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem;
+}
+form
+{
+    text-align: center;
+    margin: 2rem;
+}
+input
+{
+    padding: 12px 24px;
+    width: 50%;
+    border-radius: 8px;
+    border: none;
+    margin: 8px;
+    font-size: 1rem;
+}
+input:focus
+{
+    outline: none;
+}
+button
+{
+    padding: 0.8rem 1.7rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.s all;
+    background: lightblue;
+    color: white;
+}
+button:hover
+{
+    transform: scale(0.95);
+}
+button:focus
+{
+    outline: none;
+}
+.container
+{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.div-container
+{
+    display: grid;
+    grid-template-columns: repeat(4,280px);
+    gap: 10px;
+    justify-content: space-between;
+}
+#item
+{
+    box-shadow: 10px 14px 29px -6px rgb(50 99 83);
+    background: white;
+    border-radius: 4px;
+    text-align: center;
+}
+h2
+{
+    padding: 2rem;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.inProgress h2
+{
+    background-color: orange;
+}
+.onHold h2
+{
+    background-color: red;
+}
+.Review h2
+{
+    background-color: yellow;
+}
+.Approved h2
+{
+    background-color: green;
+}
+#item ul
+{
+    min-height: 320px;
+    list-style: none;
+}
+#item ul li
+{
+    text-align: center;
+    padding: 8px;
+    font-size: 24px;
+    background-color: aqua;
+    margin: 0px 0px 8px 0px;
+}
+.dragging
+{
+    opacity: 0.6;
+}
